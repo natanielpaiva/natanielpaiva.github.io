@@ -1,99 +1,395 @@
-
-
-<html lang="pt-BR">
+<!doctype html>
+<html class="no-js" lang="pt-br">
     <head>
         <meta charset="utf-8">
-          <title>Cursos de programação com Nataniel Paiva</title>
-          <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
-  		  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-  		  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="screen" />
-  		  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
-   
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Nataniel Paiva</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-   		  <script type="text/javascript" src="js/bootstrap.min.js"> </script>
-   		  <script type="text/javascript" src="js/jquery.min.js"> </script>
-   		  <script type="text/javascript" src="js/respond.min.js"> </script>
-   		  <script type="text/javascript" src="js/html5shiv.js"> </script>
-       
+        <!-- favicon -->		
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo/angular.png">
+
+        <!-- all css here -->
+
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min_1.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- demo switcher only -->    
+        <link rel="stylesheet" id="pagestyle" href="#">
+
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
-    
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <img src="img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;<img src="img/php.png" alt="PHP"/>
-                    
+    <body data-spy="scroll" data-target="#navbar-example">
+        <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="preloader"></div>
+        <!-- Start Welcome Area -->
+        <div class="main-area">
+            <!-- Start Header -->
+            <header>
+                <div id="sticker" class="header-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                                <!-- Navigation -->
+                                <nav class="navbar navbar-default">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <!-- logo -->
+                                        <a class="navbar-brand" href="index.html">
+                                            <!--<img src="img/logo/java.png" alt="">-->
+                                        </a>
+                                    </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse main-menu" id="navbar-example">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li>
+                                                <a href="#sobre">Sobre minha pessoa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#especialidades">Minhas especialidades</a>
+                                            </li>
+                                            <li>
+                                                <a href="#experiencia">Experiência profissional</a>
+                                            </li>		              	
+                                        </ul>
+                                    </div>
+                                    <!-- navbar-collapse -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse">
-                    
-                    
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
-        <div class="container">
-            <div class="jumbotron">
-    <h1>Curso de programação com PHP, Orientação a Objetos e Zend Framework com Nataniel Paiva</h1>
-    <p>Depois de muito tempo programando em PHP e Zend Framework, decidi dar aulas de programação e com isso nasceu essa página no github. Essa página é apenas para auxiliar os meus alunos a conseguirem baixar os projetos que utilizaremos em cada aula, para facilitar o entendimento e também para os que estão achando a aula muito "básica" conseguir avançar no conteúdo, caso queira baixar os projetos futuros que utilizaremos.
-  
-</div>
+            </header>
+            <!-- End header -->
+            <!-- Start About -->
+            <div id ="sobre" class="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                            <div class="main-content">
+                                <div class="about-main">
+                                    <div class="row">
+                                        <!-- start side bar -->
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="left-side-fixed fix">
+                                                <div class="left-sidebar">
+                                                    <div class="left-img">
+                                                        <img class="img-circle" src="img/profile/nataniel.jpg" alt="">
+                                                    </div>
+                                                    <div class="left-content">
+                                                        <h2 class="name-text">Nataniel Paiva</h2>
+                                                        <span class="typer"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End side bar -->
+                                        <!-- start right content -->
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="content-area">
+                                                <div class="main-content">
+                                                    <div class="about-self">
+                                                        <p>
+                                                            Eu sou Nataniel Paiva, apaixonado pelo que faço!!!
+                                                            Bom sou Bacharel em Sistemas de Informação pelo Centro Universitário de Desenvolvimento do Centro Oeste
+                                                            , Desenvolvedor Fullstack pela CDS, Professor de PHP e Zend pela X25 e Professor de Angular 2 pela Dissemine.
+                                                            Trabalho com Desenvolvimento de Software faz uns 7 anos, dou aulas de programação a mais de 4 anos e amo muito tudo isso!
 
-<div class="row">
+                                                        </p>
+                                                    </div>
+                                                    <!-- about-self -->
+                                                    <div class="self-text">
+                                                        <ul class="my-profile">
+                                                            <li class="clearfix">
+                                                                <strong class="head-title">Idade</strong>
+                                                                <span class="pro-list">25(Não parece, mas é isso mesmo!)</span>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <strong class="head-title">Reside</strong>
+                                                                <span class="pro-list">Valparaíso, GO</span>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <strong class="head-title">E-mail</strong>
+                                                                <span class="pro-list">nataniel.paiva@gmail.com</span>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <strong class="head-title">Telefone</strong>
+                                                                <span class="pro-list">(61) 99688-1661</span>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <strong class="head-title">Skype</strong>
+                                                                <span class="pro-list">cds.nataniel</span>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <strong class="head-title">Freelancer</strong>
+                                                                <span class="pro-list">Professional Freelancer</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- End about-self -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- End right content -->
+                                        <div class="about-bottom">
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Orientação a Objetos</h3>
-            </div>
-            <div class="panel-body">
-                <p>
-                   Hoje em dia está muito fácil programar, ainda mais com o paradigma de POO, porém muitos programadores preferem ser ninjas e dizer que é muito mais fácil uma programação estruturada, uns defendem, outros odeiam, mas vou deixar um link de um video aqui para você entender o que não é POO! Divirta-se com o video no nosso amigo que cria as tirinhas do vida de programador.
-                </p>
-                <p><a class="btn btn-success pull-right" href="https://www.youtube.com/watch?v=mZjrIYyI1qI" target="_blank">Cuidado, video muito engraçado &raquo;</a></p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                <div class="social-icons text-center">
+                                                    <ul>
+                                                        <li><a target="_blank" href="https://www.facebook.com/nataniel.paiva"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a target="_blank" href="https://twitter.com/natanielfpaiva"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/natanielpaiva"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                <div class="resume text-center">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>			 
+            <!-- End About -->
+        </div>
+        <!-- End Welcome Area -->
+        <!-- Start Skills -->
+        <div id ="especialidades" class="skill-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                        <!-- start main content -->
+                        <div class="skill-main">
+                            <div class="section-head text-center">
+                                <h3>Minhas especialidades</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- Skills Progressbar -->
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">HTML 5</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">95%</span>
+                                    </div>
+                                    <!-- Skills Progressbar -->
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">CSS 3</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                        </div>
+                                        <span class="web-per bar-2 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">70%</span>
+                                    </div>
+                                    <!-- Skills Progressbar -->
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">AngularJS e Angular 2</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per bar-3 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">95%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">MySQL, PostgreSQL, Oracle e MongoDB</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per bar-3 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">85%</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">Java 8</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per bar-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">90%</span>
+                                    </div>
+                                    <!-- Skills Progressbar -->
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">PHP 7</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per bar-5 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">85%</span>
+                                    </div>
+                                    <!-- Skills Progressbar -->
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">NodeJS</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per bar-5 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">85%</span>
+                                    </div>  
+                                    <!-- Skills Progressbar -->
+                                    <div class="skill-progress">
+                                        <h4 class="web-ex">Spring, Hibernate, JPA 2</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <span class="web-per bar-5 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">85%</span>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- End main content -->
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">PHP</h3>
-            </div>
-            <div class="panel-body">
-                <p>
-                  Uma linguagem muito simples, porém com capacidade de criar grandes aplicações, temos hoje em PHP vários sites e sistemas no mundo inteiro, inclusive o Facebook é feito na linguagem PHP. Veja o manual da linguagem e verá o quanto é simples programar hoje em dia. Em breve estarei colocando aqui o meu link no github com os mini projetos em PHP, pois ainda estou  criando eles.
-                </p>
-                <p><a class="btn btn-success pull-right" href="http://www.php.net/" target="_blank">PHP.net &raquo;</a></p>
+        <!-- End Skills -->
+        <!-- Start Experience Area -->
+        <div id ="experiencia" class="expere-area area-padding">
+            <div class="container">							
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                        <!-- start main content -->
+                        <div class="experience-main">
+                            <div class="section-head text-center">
+                                <h3>Experiência profissional</h3>
+                            </div>
+                            <div class="row">
+                                <!-- Start Experince -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="expre-edu left-edu">
+                                        <!-- edu-result -->
+                                        <div class="edu-result">
+                                            <span class="select-pin">2014-Atual</span>
+                                            <h5>Desenvolvedor Fullstack</h5>
+                                            <h6><a target="_blank" href="http://www.cds.com.br">CDS</a></h6>
+                                            <p>
+                                                Análise e desenvolvimento de produtos open source em Java 8 e AngularJS.
+                                                Na CDS nós criamos produtos de Data Visualization Free, inclusive o código está todo no Github(<a target="_blank" href="http://github.com/connecta-solutions">Connecta</a>) com todos os meus commits para que possa analisar tudo que já fiz nesses últimos anos.
+                                            </p>
+                                        </div>
+                                        <!-- edu-result -->
+                                        <div class="edu-result">
+                                            <span class="select-pin">2012-Atual</span>
+                                            <h5>Professor de PHP, Zend 1 e 2</h5>
+                                            <h6><a target="_blank" href="http://x25.com.br/">X25</a></h6>
+                                            <p>Na X25 já tive a oportunidade de ministrar cursos de PHP para clientes como a Aeronáutica, Caixa Economica Federal, Exército Brasileiro entre outros, também ministro os cursos sobre Zend Framework 1 e 2 sempre sendo bem avaliado pelos meus alunos.</p>
+                                        </div>
+                                        <!-- edu-result -->
+                                        <div class="edu-result last-result">
+                                            <span class="select-pin">2010-2012</span>
+                                            <h5>Desenvolvedor de Software</h5>
+                                            <h6><a target="_blank" href="http://www.cds.com.br">CDS</a></h6>
+                                            <p>
+                                                Na CDS foi onde comecei minha carreira trabalhando com PHP, Zend, MySQL entre outras tecnologias.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="expre-edu right-expre">
+                                        <!-- edu-result -->
+                                        <div class="edu-result right-edu">
+                                            <span class="select-pin">2016-Atual</span>
+                                            <h5>Professor de Angular 2</h5>
+                                            <h6><a target="_blank" href="http://www.dissemine.com.br/">Dissemine</a></h6>
+                                            <p>Na Dissemine tive a oportunidade de ministrar um curso sobre Angular 2 para 26 pessoas no TSE.
+                                                O curso abordou desde o básico até avançados recursos do Framework.</p>
+                                        </div>
+                                        <!-- edu-result -->
+                                        <div class="edu-result right-edu">
+                                            <span class="select-pin">2013-2014</span>
+                                            <h5>Coordenador de Desenvolvimento</h5>
+                                            <h6><a target="_blank" href="https://www.linkedin.com/company/954-business-consulting">954 Business Consulting</a></h6>
+                                            <p>
+                                                Na 954 tive a oportunidade de coordenar uma equipe fantástica de Desenvolvimento, lá eu aprendi muito na área de gestão, coordenação de equipe e Desenvolvimento de grandes projetos.
+                                            </p>
+                                        </div>
+                                        <!-- edu-result -->
+                                        <div class="edu-result last-result right-edu">
+                                            <span class="select-pin">2012-2013</span>
+                                            <h5>Desenvolvedor de Software</h5>
+                                            <h6><a target="_blank" href="https://www.linkedin.com/company/954-business-consulting">954 Business Consulting</a></h6>
+                                            <p>
+                                                Trabalhei com análise e desenvolvimento de sistemas utilizando PHP 5, Zend Framework, MySQL, OOP, Design Patterns, HTML, jQuery, Ajax, Web Service Rest entre outras tecnologias.
+                                            </p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End main content -->
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Zend Framework </h3>
-            </div>
-            <div class="panel-body">
-                <p>
-                 O que falar de um framework que me fez começar isso tudo, isso mesmo, iniciei minhas aulas primeiramente com Zend Framework na versão 1, agora estou ministrando aulas da versão mais atual desse Framework que na minha opnião é o melhor Framework de PHP atualmente, esse link abaixo você conseguirar ver os repositórios que tenho no github com os mini projetos de cada aula que ministro.
-                </p>
-                <p><a class="btn btn-success pull-right" href="https://natanielpaiva.github.io/zf2" target="_blank">Meus projetos no github &raquo;</a></p>
-            </div>
-        </div>
-    </div>
-</div> 
-
-
-
-            <hr>
-            <footer>
-                <p>&copy; 2014 -Aulas de Programação com <a href="https://www.linkedin.com/in/natanielpaiva">Nataniel Paiva.</a></p><a href="https://plus.google.com/106689931256795459148" rel="publisher">Google+</a>
-            </footer>
-        </div> <!-- /container -->
         
+        
+        <!-- Start Footer Area -->
+        <footer class="footer-area">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="copyright text-center">
+                        <p>Copyright &copy; 2017 <a href="#">Nataniel Paiva</a>.&nbsp; All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+
+        <!-- End Demo Switcher -->
+
+        <!-- all js here -->
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- easing js -->
+        <script src="js/easing.js"></script>
+        <!-- jquery.appear js -->
+        <script src="js/jquery.appear.js"></script>
+        <!-- Isotope js -->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- typed js -->
+        <script src="js/typed.js"></script>
+        <!-- plugins js -->
+        <script src="js/plugins.js"></script>
+        <!-- main js -->
+        <script src="js/main.js"></script>
     </body>
-</html>
+
+</html>			

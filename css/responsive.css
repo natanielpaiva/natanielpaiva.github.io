@@ -1,0 +1,232 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.main-menu ul.nav > li > a {
+  padding: 10px 6px;
+}
+.left-content h4 {
+    font-size: 16px;
+}
+.left-content h2 {
+    font-size: 26px;
+}
+.social-icons ul li a {
+  margin: 0 -1px;
+}
+.skill-main .second-row {
+  margin-top: 0;
+}
+.item-indicator.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev {
+  right: 7%;
+}
+.pri_table_list button {
+  padding: 10px 30px;
+}
+.blog-item.item-indicator.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev {
+  right: 9.5%;
+}
+.dropdown-toggle::after {
+  right: -6px;
+  top: 11px;
+}
+.contact-info {
+  padding: 60px 42px 0;
+} 
+  
+}
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.header-area.stick {
+  position: static;
+}
+.navbar-brand > img {
+  margin-top: 4px;
+} 
+.left-side-fixed.fix {
+  padding: 0 15px !important;
+}    
+.content-area {
+  padding: 20px 10px 0 !important;
+}
+.about-self > p {
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.head-title {
+  width: 90px;
+}
+.left-content h4 {
+  font-size: 15px;
+}
+.left-content h2 {
+  font-size: 26px;
+}
+.resume,.about-bottom .social-icons {
+  margin-bottom: 20px;
+}
+.edu-result.last-result {
+  margin-bottom: 30px;
+}
+.left-edu {
+  padding-right: 0;
+}
+.left-edu::before {
+  width: 0;
+}
+.left-edu::after {
+  background: none;
+}
+.left-edu .edu-result {
+  border-right: none;
+}
+.left-edu .edu-result::before {
+  display: none;
+}
+.left-edu .edu-result::after {
+	display: none;
+}
+.right-expre {
+  padding-left: 0;
+}
+.right-expre .edu-result {
+  border-left: none;
+  padding: 30px 20px 20px;
+}
+.expre-edu.left-edu .edu-result {
+  padding: 30px 20px 20px;
+}
+.right-expre .edu-result::before {
+  display: none;
+}
+.right-expre .edu-result::after {
+  display: none;
+}
+.icons-bottom ul li a {
+  margin: 0 1px 30px;
+}
+.single-client {
+  width: 100%;
+  float: none;
+  display: block;
+  text-align: center;
+}
+.testi-text p {
+  width: 98%;
+}
+.portfolio-menu li {
+  display: block;
+}
+.portfolio-menu > li::after {
+  width: 0;
+}
+.pro-last {
+  margin-bottom: 30px;
+  padding-bottom: 0;
+}
+.single-client::before,
+.single-client::after {
+	display: none;
+}
+.item-indicator.owl-carousel.owl-theme .owl-controls .owl-nav div {
+	display: none !important;
+}
+.stick .main-menu ul.nav > li > a {
+  padding: 10px 15px;
+}
+.main-menu ul.navbar-nav li ul.sub-menu {
+  left: 15px;
+}
+.main-menu ul.nav > li {
+  display: block;
+}
+.pri_table_list {
+  margin-bottom: 30px;	
+}
+.expre-edu-2.left-edu::after,
+.expre-edu-3.left-edu::after,
+.expre-edu-4.left-edu::after,
+.expre-edu-5.left-edu::after {
+  background: none repeat scroll 0 0;
+}
+.sharing-icon a {
+  margin-left: 3px;
+}
+.sharing-icon {
+  float: none;
+}
+.author-avatar {
+  width: 30%;
+}
+.author-description h2 {
+  font-size: 14px;
+}
+.dropdown-toggle::after {
+  right: 20px;
+  top: 11px;
+}
+.main-menu ul.navbar-nav li.dropdown.active.open ul.sub-menu.dropdown-menu {
+  background: transparent none repeat scroll 0 0 !important;
+  border: medium none;
+  box-shadow: none;
+  display: block !important;
+  opacity: 1;
+  position: initial !important;
+  visibility: visible;
+  width: 100% !important;
+  transition: 0.4s;
+}
+.dropdown.active .sub-menu.dropdown-menu {
+  display: none !important;
+  transition: 0.4s;
+}
+.main-menu ul.navbar-nav li.dropdown.active.open ul.sub-menu.dropdown-menu li a {
+  color: #fff !important;
+}
+.main-menu ul.navbar-nav li.dropdown.active.open ul.sub-menu.dropdown-menu li {
+  border-bottom:none;
+  display: block;
+}
+.stick .dropdown-toggle::after {
+  right: 15px;
+  top: 11px;
+}
+.contact-info {
+  padding: 0;
+} 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {
+  width:450px;
+}	
+.left-side-fixed.fix {
+  padding: 0 15px !important;
+  text-align: center;
+}
+.content-area {
+  padding: 20px 60px 0 !important;
+}  
+.resume,.about-bottom .social-icons {
+  margin-bottom: 30px;
+}
+.icons-bottom ul li a {
+  margin: 0 1px 30px;
+}
+.dropdown-toggle::after {
+  right: 20px;
+  top: 25px;
+}
+.sub-menu.dropdown-menu {
+  background: transparent none repeat scroll 0 0 !important;
+  position: initial !important;
+} 
+}
+ 
