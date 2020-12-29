@@ -391,6 +391,7 @@ h2.name-text {
 }
 .about-main{
 	padding-top: 80px;
+	border-radius: 51px;
 }
 .about-details {
   margin-bottom: 30px;
