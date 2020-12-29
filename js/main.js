@@ -56,7 +56,7 @@ Page Scroll
 ------------------------------ */
 
 	$(".typer").typed({
-	    strings: ["Desenvolvedor Fullstack", "Java", "Angular 2"],
+	    strings: ["Líder Técnico", "Professor", "Java", "Spring Boot", "MongoDB"],
 	    typeSpeed: 200,
 	    loop: true,
 	    cursorChar: "+"
