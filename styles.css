@@ -10,8 +10,8 @@ body {
     background: #ffffff;
     padding: 50px;
     border-radius: 20px;
-    width: 95%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 900px;
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -211,47 +211,50 @@ h2 {
 /* ... (restante do código) ... */
 
 
-
+/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
         padding: 30px;
     }
 
     .profile-pic {
-        width: 180px;
-        height: 180px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
     }
 
-    h1 {
-        font-size: 2em;
+    .profile-name {
+        font-size: 1.6em;
     }
 
-    p {
-        font-size: 1.2em;
-    }
-
-    .link {
-        margin: 5px 5px;
-        padding: 10px;
+    .profile-description {
+        font-size: 1em;
     }
 
     .course {
-        width: 100%;
+        width: calc(50% - 10px); /* 2 cursos por linha em telas menores */
+        margin-bottom: 15px;
     }
-}
 
-@media (max-width: 480px) {
-    .social-links {
+    .links {
         flex-direction: column;
     }
 
     .link {
-        margin: 5px 0;
-        flex: none;
-        width: 100%;
+        margin: 10px 0;
     }
 }
+
+/* Estilos para telas muito pequenas (como smartphones) */
+@media (max-width: 480px) {
+    .course {
+        width: 100%; /* 1 curso por linha em telas muito pequenas */
+        margin-bottom: 15px;
+    }
+}
+
+/* ... (restante do código) ... */
+
 /* ... (código anterior) ... */
 
 .footer {
