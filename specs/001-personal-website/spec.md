@@ -5,6 +5,8 @@
 ### 1.1 Propósito
 Criar um site pessoal profissional e moderno para Nataniel Paiva, Staff Engineer e Professor, que sirva como cartão de visitas digital, portfólio de trabalhos e hub central para seu conteúdo educacional e profissional.
 
+**🌐 Hospedagem**: Site estático hospedado no **GitHub Pages** (gratuito, com HTTPS automático e deploy contínuo).
+
 ### 1.2 Objetivos
 - Apresentar perfil profissional de forma atrativa e profissional
 - Destacar experiência como Staff Engineer no PicPay
@@ -263,10 +265,25 @@ Criar um site pessoal profissional e moderno para Nataniel Paiva, Staff Engineer
 - **Google Analytics 4**: Tracking
 - **Font APIs**: Google Fonts ou similar
 
-### 6.2 Hospedagem Sugerida
-- **GitHub Pages** (ideal para este projeto)
-- Domínio customizado: natanielpaiva.com.br (se disponível)
-- CDN para assets (Cloudflare, opcional)
+### 6.2 Hospedagem
+
+**GitHub Pages** (escolha definitiva para este projeto):
+
+✅ **Por que GitHub Pages?**
+- ✅ **Gratuito**: Hospedagem ilimitada para sites estáticos
+- ✅ **HTTPS automático**: Certificado SSL gratuito
+- ✅ **Deploy automático**: Push para `main` → site atualizado em ~2 minutos
+- ✅ **Sem configuração de servidor**: Zero maintenance
+- ✅ **CDN global**: Entrega rápida via Fastly CDN
+- ✅ **Custom domain**: Suporte para domínio próprio (natanielpaiva.com.br)
+- ✅ **99.9% uptime**: Confiabilidade enterprise
+
+**Configuração**:
+- Repository: `natanielpaiva.github.io`
+- Branch: `main`
+- Directory: `/` (root)
+- URL: `https://natanielpaiva.github.io`
+- Custom domain (opcional): `natanielpaiva.com.br`
 
 ## 7. Estrutura de Arquivos
 

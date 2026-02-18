@@ -2,16 +2,19 @@
 
 **Quick Reference** | **Date**: 2026-02-18
 
+> **🌐 IMPORTANTE**: Este site é hospedado no **GitHub Pages** - um serviço gratuito de hospedagem de sites estáticos.
+> Isso significa: apenas HTML/CSS/JavaScript, sem backend/servidor. Deploy automático via `git push`.
+
 ## Overview
 
-Guia rápido para desenvolver, testar e fazer deploy do site pessoal profissional.
+Guia rápido para desenvolver, testar e fazer deploy do site pessoal profissional no **GitHub Pages**.
 
 ## Prerequisites
 
 - Git instalado
 - Editor de código (VS Code recomendado)
 - Navegador moderno (Chrome/Firefox/Safari)
-- Conta GitHub (para deploy)
+- **Conta GitHub (obrigatório para GitHub Pages hosting)**
 - Formspree account (para formulário) - free tier
 
 ## Project Setup

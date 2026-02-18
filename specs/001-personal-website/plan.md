@@ -7,7 +7,9 @@
 
 ## Summary
 
-Criar um site pessoal profissional e moderno que sirva como cartão de visitas digital, portfólio de trabalhos e hub central para conteúdo educacional. O site será uma Single Page Application (SPA) responsiva, otimizada para SEO, com integração à YouTube API e formulário de contato. Foco em vanilla HTML/CSS/JavaScript para máxima performance e simplicidade, hospedado no GitHub Pages.
+Criar um site pessoal profissional e moderno que sirva como cartão de visitas digital, portfólio de trabalhos e hub central para conteúdo educacional. O site será uma Single Page Application (SPA) responsiva, otimizada para SEO, com integração à YouTube API e formulário de contato. Foco em vanilla HTML/CSS/JavaScript para máxima performance e simplicidade.
+
+**🌐 Hospedagem**: **GitHub Pages** - site estático com deploy automático via push para branch `main`. Zero custos, HTTPS incluído, CDN global.
 
 ## Technical Context
 
@@ -34,9 +36,9 @@ Criar um site pessoal profissional e moderno que sirva como cartão de visitas d
 - Total page size < 2MB
 
 **Constraints**: 
+- **GitHub Pages hosting**: Site estático (HTML/CSS/JS apenas, sem backend/SSR)
 - Sem frameworks JavaScript pesados (React, Angular, Vue)
 - Máxima compatibilidade mobile
-- Hospedagem no GitHub Pages (site estático)
 - SEO-friendly (meta tags, schema.org)
 - WCAG 2.1 Level AA compliance
 
