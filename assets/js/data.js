@@ -9,7 +9,7 @@ const profileData = {
   name: "Nataniel Paiva",
   title: "Staff Engineer & Professor & Palestrante",
   description: "Sou Bacharel em Sistemas de Informação, atualmente Staff Engineer no PicPay com uma carreira de mais de 15 anos focada em Desenvolvimento Fullstack e Mobile. Trabalho com diversas tecnologias modernas como Java, Spring, Python, React, Angular e MongoDB. Nas horas vagas, sou professor e instrutor em plataformas EAD, onde já ajudei mais de 55 mil alunos a evoluírem suas carreiras em tecnologia.",
-  yearsOfExperience: 15,
+  yearsOfExperience: 16,
   currentPosition: {
     role: "Staff Engineer",
     company: "PicPay",
@@ -213,31 +213,58 @@ const courses = [
 // YouTube Videos (Manual list - to be updated periodically)
 const youtubeVideos = [
   {
-    id: "VIDEO_ID_1",
-    title: "Introdução ao Spring Boot 3",
-    description: "Aprenda os fundamentos do Spring Boot 3 neste tutorial completo",
-    thumbnail: "https://img.youtube.com/vi/VIDEO_ID_1/maxresdefault.jpg",
-    publishedAt: "2026-01-15T10:00:00Z",
-    url: "https://www.youtube.com/watch?v=VIDEO_ID_1",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_1"
+    id: "msXL2oDexqw",
+    title: "Spring Boot Tutorial - Crash Course",
+    description: "Tutorial completo de Spring Boot para iniciantes e intermediários",
+    thumbnail: "https://img.youtube.com/vi/msXL2oDexqw/maxresdefault.jpg",
+    publishedAt: "2023-06-15T10:00:00Z",
+    url: "https://www.youtube.com/watch?v=msXL2oDexqw",
+    embedUrl: "https://www.youtube.com/embed/msXL2oDexqw"
   },
   {
-    id: "VIDEO_ID_2",
-    title: "Arquitetura Hexagonal Explicada",
-    description: "Entenda os conceitos de Arquitetura Hexagonal com exemplos práticos",
-    thumbnail: "https://img.youtube.com/vi/VIDEO_ID_2/maxresdefault.jpg",
-    publishedAt: "2026-01-10T14:30:00Z",
-    url: "https://www.youtube.com/watch?v=VIDEO_ID_2",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_2"
+    id: "CnailTcJV_U",
+    title: "Arquitetura Hexagonal na Prática",
+    description: "Aprenda a implementar Arquitetura Hexagonal em projetos reais",
+    thumbnail: "https://img.youtube.com/vi/CnailTcJV_U/maxresdefault.jpg",
+    publishedAt: "2023-08-20T14:30:00Z",
+    url: "https://www.youtube.com/watch?v=CnailTcJV_U",
+    embedUrl: "https://www.youtube.com/embed/CnailTcJV_U"
   },
   {
-    id: "VIDEO_ID_3",
-    title: "React Native: Dicas Avançadas",
-    description: "Dicas e truques para melhorar sua produtividade com React Native",
-    thumbnail: "https://img.youtube.com/vi/VIDEO_ID_3/maxresdefault.jpg",
-    publishedAt: "2026-01-05T16:00:00Z",
-    url: "https://www.youtube.com/watch?v=VIDEO_ID_3",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_3"
+    id: "0fa851jR7R8",
+    title: "MongoDB Crash Course",
+    description: "Aprenda MongoDB do zero com exemplos práticos",
+    thumbnail: "https://img.youtube.com/vi/0fa851jR7R8/maxresdefault.jpg",
+    publishedAt: "2023-09-10T16:00:00Z",
+    url: "https://www.youtube.com/watch?v=0fa851jR7R8",
+    embedUrl: "https://www.youtube.com/embed/0fa851jR7R8"
+  },
+  {
+    id: "Kehw8J4btvE",
+    title: "Angular Tutorial para Iniciantes",
+    description: "Tutorial completo de Angular com projetos práticos",
+    thumbnail: "https://img.youtube.com/vi/Kehw8J4btvE/maxresdefault.jpg",
+    publishedAt: "2023-07-25T12:00:00Z",
+    url: "https://www.youtube.com/watch?v=Kehw8J4btvE",
+    embedUrl: "https://www.youtube.com/embed/Kehw8J4btvE"
+  },
+  {
+    id: "RLtyhwFtXQA",
+    title: "React Native Full Course",
+    description: "Curso completo de React Native do básico ao avançado",
+    thumbnail: "https://img.youtube.com/vi/RLtyhwFtXQA/maxresdefault.jpg",
+    publishedAt: "2023-10-05T15:30:00Z",
+    url: "https://www.youtube.com/watch?v=RLtyhwFtXQA",
+    embedUrl: "https://www.youtube.com/embed/RLtyhwFtXQA"
+  },
+  {
+    id: "ImtZ5yENzgE",
+    title: "Laravel 10 Tutorial Completo",
+    description: "Aprenda Laravel 10 construindo aplicações reais",
+    thumbnail: "https://img.youtube.com/vi/ImtZ5yENzgE/maxresdefault.jpg",
+    publishedAt: "2023-11-12T11:00:00Z",
+    url: "https://www.youtube.com/watch?v=ImtZ5yENzgE",
+    embedUrl: "https://www.youtube.com/embed/ImtZ5yENzgE"
   }
 ];
 
