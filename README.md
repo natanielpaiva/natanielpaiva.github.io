@@ -1,118 +1,96 @@
 # Nataniel Paiva - Personal Website
 
-🌐 **Live Site**: [https://natanielpaiva.github.io](https://natanielpaiva.github.io)
+> 🌐 **Live Site**: [https://natanielpaiva.github.io](https://natanielpaiva.github.io)
 
-Professional personal website for Nataniel Paiva - Staff Engineer at PicPay, Professor, and Content Creator.
+Professional personal website showcasing my work as a Staff Engineer, Professor, and Speaker.
 
-## About
+## 🎯 About
 
-This site serves as a digital business card, portfolio, and central hub for educational content including:
+This is a modern, responsive single-page application built with vanilla HTML, CSS, and JavaScript. It serves as my digital portfolio, featuring:
 
-- 🎓 **17 Udemy courses** with 55,541+ students
-- 🎥 **YouTube content** from @NatanielTech channel  
-- 💼 **13+ years** of professional experience in Fullstack and Mobile development
-- 🎤 **Speaking engagements** and technical talks
+- **Professional Profile**: 13+ years of experience in Fullstack and Mobile Development
+- **Online Courses**: 17 courses on Udemy with 55,541+ students
+- **Technical Content**: YouTube channel integration with latest videos
+- **Contact Form**: Direct communication channel for professional inquiries
+- **Talks & Events**: Speaking engagements and technical presentations
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with animations
-- **JavaScript ES6+** - Vanilla JS (no frameworks)
-- **YouTube IFrame API** - Video integration
-- **Formspree** - Contact form backend
-- **GitHub Pages** - Free static hosting with HTTPS
+- **HTML5**: Semantic markup
+- **CSS3**: Modern styling with CSS Variables, Flexbox, Grid
+- **JavaScript ES6+**: Vanilla JS (no frameworks)
+- **APIs**: YouTube IFrame API, Formspree (contact form)
+- **Hosting**: GitHub Pages (free, HTTPS, CDN)
 
-## Key Features
-
-✅ Responsive mobile-first design  
-✅ SEO optimized (meta tags, schema.org, sitemap)  
-✅ WCAG 2.1 AA accessible  
-✅ Lighthouse score >90  
-✅ Contact form with validation  
-✅ YouTube video integration  
-
-## Development
-
-### Local Development
-
-Simply open `index.html` in a browser, or use a local server:
+## 🚀 Local Development
 
 ```bash
-# Using Python 3
+# Clone the repository
+git clone https://github.com/natanielpaiva/natanielpaiva.github.io.git
+cd natanielpaiva.github.io
+
+# Open in browser (no build required!)
+# Option 1: Double-click index.html
+# Option 2: Use Live Server in VS Code
+# Option 3: Python simple server
 python3 -m http.server 8000
-
-# Using PHP
-php -S localhost:8000
-
-# Using Node.js (http-server)
-npx http-server
 ```
 
-Visit: http://localhost:8000
+Then open http://localhost:8000
 
-### Project Structure
+## 📂 Project Structure
 
 ```
 natanielpaiva.github.io/
 ├── index.html              # Main HTML file
 ├── assets/
-│   ├── css/               # Stylesheets
-│   ├── js/                # JavaScript modules
-│   └── images/            # Images and icons
+│   ├── css/
+│   │   ├── style.css       # Main styles
+│   │   ├── responsive.css  # Media queries
+│   │   └── animations.css  # Animations
+│   ├── js/
+│   │   ├── main.js        # Main logic
+│   │   ├── data.js        # Site content
+│   │   ├── animations.js  # Scroll effects
+│   │   ├── youtube.js     # YouTube integration
+│   │   ├── contact.js     # Form handling
+│   │   └── utils.js       # Utilities
+│   └── images/            # Photos and icons
 ├── robots.txt             # SEO
 ├── sitemap.xml            # SEO
 └── README.md              # This file
 ```
 
-## Deployment
+## 🚢 Deployment
 
 **Automatic deployment via GitHub Pages:**
 
 1. Push changes to `main` branch
-2. GitHub Pages automatically rebuilds (~2 minutes)
-3. Site is live at https://natanielpaiva.github.io
+2. GitHub Pages automatically builds and deploys
+3. Site updates in ~2 minutes
+4. View at: https://natanielpaiva.github.io
 
-### Custom Domain Setup (Optional)
+**Custom Domain (Optional):**
 
-To use a custom domain like `natanielpaiva.com.br`:
+1. Create `CNAME` file with domain: `natanielpaiva.com.br`
+2. Configure DNS: CNAME → `natanielpaiva.github.io`
+3. Enable HTTPS in repo Settings → Pages
 
-1. Create `CNAME` file with your domain
-2. Configure DNS CNAME record pointing to `natanielpaiva.github.io`
-3. Enable HTTPS in GitHub Pages settings
+## ✅ Performance
 
-## Performance
+- Lighthouse Score: >90 (Performance, SEO, Accessibility, Best Practices)
+- First Contentful Paint: <1.5s
+- Time to Interactive: <3s
+- WCAG 2.1 Level AA compliant
 
-- ⚡ First Contentful Paint: <1.5s
-- ⚡ Time to Interactive: <3s  
-- 📦 Total page size: <2MB
-- 🎯 Lighthouse Performance: >90
-
-## SEO
-
-- ✅ Schema.org Person markup
-- ✅ Open Graph meta tags
-- ✅ Semantic HTML5
-- ✅ Sitemap and robots.txt
-- ✅ Alt text on all images
-
-## Browser Support
-
-- Chrome (latest 2 versions)
-- Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-- Edge (latest 2 versions)
-
-## Contact
-
-- 💼 **LinkedIn**: [Nataniel Paiva](https://www.linkedin.com/in/natanielpaiva/)
-- 🐙 **GitHub**: [@natanielpaiva](https://github.com/natanielpaiva)
-- 🎥 **YouTube**: [@NatanielTech](https://youtube.com/@NatanielTech)
-- 📚 **Udemy**: [Nataniel Paiva's Courses](https://www.udemy.com/user/nataniel-paiva/)
-
-## License
+## 📝 License
 
 © 2026 Nataniel Paiva. All rights reserved.
 
----
+## 📧 Contact
 
-**Built with ❤️ using vanilla HTML, CSS, and JavaScript**
+- **Email**: [Your Email]
+- **LinkedIn**: [linkedin.com/in/natanielpaiva](https://linkedin.com/in/natanielpaiva)
+- **GitHub**: [github.com/natanielpaiva](https://github.com/natanielpaiva)
+- **YouTube**: [@NatanielTech](https://youtube.com/@NatanielTech)
+- **Udemy**: [Profile Link]

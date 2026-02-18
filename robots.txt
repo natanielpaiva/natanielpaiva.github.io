@@ -1,5 +1,5 @@
 # robots.txt for natanielpaiva.github.io
-# Allow all search engines to index the site
+# Allow all search engines to crawl the site
 
 User-agent: *
 Allow: /
