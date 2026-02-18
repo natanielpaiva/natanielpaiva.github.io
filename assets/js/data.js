@@ -21,7 +21,7 @@ const profileData = {
   },
   photos: {
     hero: "assets/images/hero-photo.jpg",
-    about: "assets/images/about-photo.jpg",
+    about: "assets/images/about-photo.png",
     favicon: "assets/images/favicon.ico"
   },
   email: "contato@natanielpaiva.com.br",
