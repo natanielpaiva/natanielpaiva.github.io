@@ -1,248 +1,393 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contagem Regressiva - Amor da Minha Vida</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Raleway', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #feca57 100%);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-            overflow: hidden;
-            position: relative;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .hearts-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .heart {
-            position: absolute;
-            font-size: 20px;
-            color: rgba(255, 255, 255, 0.6);
-            animation: float 10s infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-
-        .container {
-            text-align: center;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-width: 90%;
-            width: 600px;
-            animation: pulse 3s ease-in-out infinite;
-            z-index: 10;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5em;
-            color: #fff;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            line-height: 1.3;
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-
-        .time-unit {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 15px;
-            min-width: 100px;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .time-value {
-            font-size: 3em;
-            font-weight: bold;
-            color: #fff;
-            display: block;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .time-label {
-            font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.9);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 10px;
-        }
-
-        .message {
-            margin-top: 40px;
-            font-size: 1.2em;
-            color: #fff;
-            line-height: 1.6;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8em;
-            }
-            
-            .time-unit {
-                min-width: 70px;
-                padding: 15px;
-            }
-            
-            .time-value {
-                font-size: 2em;
-            }
-            
-            .message {
-                font-size: 1em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Nataniel Paiva - Staff Engineer & Professor | 55 mil alunos | PicPay</title>
+  <meta name="title" content="Nataniel Paiva - Staff Engineer & Professor">
+  <meta name="description" content="Staff Engineer no PicPay com 13+ anos de experiência. Professor com 17 cursos na Udemy e 55.541 alunos. Especialista em Java, Spring, React, Angular, MongoDB e Arquitetura de Software.">
+  <meta name="keywords" content="Nataniel Paiva, Staff Engineer, PicPay, Java, Spring Boot, React, Angular, MongoDB, Udemy, Professor, Arquitetura Hexagonal, C4 Model">
+  <meta name="author" content="Nataniel Paiva">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://natanielpaiva.github.io/">
+  <meta property="og:title" content="Nataniel Paiva - Staff Engineer & Professor">
+  <meta property="og:description" content="Staff Engineer no PicPay com 13+ anos de experiência. Professor com 55 mil alunos na Udemy.">
+  <meta property="og:image" content="https://natanielpaiva.github.io/assets/images/hero-photo.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://natanielpaiva.github.io/">
+  <meta property="twitter:title" content="Nataniel Paiva - Staff Engineer & Professor">
+  <meta property="twitter:description" content="Staff Engineer no PicPay com 13+ anos de experiência. Professor com 55 mil alunos na Udemy.">
+  <meta property="twitter:image" content="https://natanielpaiva.github.io/assets/images/hero-photo.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nataniel Paiva",
+    "jobTitle": "Staff Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "PicPay"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Centro Universitário de Desenvolvimento do Centro Oeste"
+    },
+    "description": "Staff Engineer com 13+ anos de experiência em desenvolvimento Fullstack e Mobile. Professor com 17 cursos na Udemy e 55.541 alunos.",
+    "url": "https://natanielpaiva.github.io",
+    "sameAs": [
+      "https://linkedin.com/in/natanielpaiva",
+      "https://github.com/natanielpaiva",
+      "https://www.youtube.com/@NatanielTech",
+      "https://www.udemy.com/user/nataniel-paiva/"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div class="hearts-container" id="hearts"></div>
-    
+  
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
     <div class="container">
-        <h1>Contagem Regressiva<br>Para Encontrar o Amor da Minha Vida</h1>
-        
-        <div class="countdown">
-            <div class="time-unit">
-                <span class="time-value" id="days">0</span>
-                <div class="time-label">Dias</div>
-            </div>
-            <div class="time-unit">
-                <span class="time-value" id="hours">0</span>
-                <div class="time-label">Horas</div>
-            </div>
-            <div class="time-unit">
-                <span class="time-value" id="minutes">0</span>
-                <div class="time-label">Minutos</div>
-            </div>
-            <div class="time-unit">
-                <span class="time-value" id="seconds">0</span>
-                <div class="time-label">Segundos</div>
-            </div>
-        </div>
-        
-        <div class="message">
-            <p>✨ Cada segundo que passa é um segundo mais perto de você ✨</p>
-        </div>
+      <div class="nav-brand">
+        <a href="#home">Nataniel Paiva</a>
+      </div>
+      
+      <!-- Hamburger menu for mobile -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Início</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#courses" class="nav-link">Cursos</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#youtube" class="nav-link">YouTube</a></li>
+        <li><a href="#talks" class="nav-link">Palestras</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <script>
-        // Data alvo: 31 de janeiro de 2026 às 23:59:59
-        const now = new Date();
-        const changeDate = new Date('2026-01-21T17:00:00');
-        
-        let targetDate;
-        if (now >= changeDate) {
-            targetDate = new Date('2026-01-22T18:55:00').getTime();
-        } else {
-            targetDate = new Date('2026-01-22T19:00:00').getTime();
-        }
-
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.className = 'heart';
-            heart.innerHTML = '❤️';
-            heart.style.left = Math.random() * 100 + '%';
-            heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
-            heart.style.animationDelay = Math.random() * 5 + 's';
-            document.getElementById('hearts').appendChild(heart);
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="assets/images/hero-photo.jpg" alt="Nataniel Paiva - Staff Engineer" loading="eager">
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">Nataniel Paiva</h1>
+            <p class="hero-subtitle">Staff Engineer & Professor & Palestrante</p>
+            <p class="hero-tagline">Transformando ideias em soluções tecnológicas há mais de 13 anos</p>
             
-            setTimeout(() => {
-                heart.remove();
-            }, 10000);
-        }
+            <!-- Social Links -->
+            <div class="hero-social" id="hero-social">
+              <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+              <a href="#courses" class="btn btn-primary">Ver Cursos</a>
+              <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll para saber mais">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
 
-        // Criar corações a cada 2 segundos
-        setInterval(createHeart, 2000);
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">Sobre Mim</h2>
         
-        // Criar alguns corações iniciais
-        for(let i = 0; i < 5; i++) {
-            setTimeout(createHeart, i * 400);
-        }
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/images/about-photo.jpg" alt="Nataniel Paiva" loading="lazy">
+          </div>
+          
+          <div class="about-text">
+            <p class="about-description" id="about-description">
+              <!-- Will be populated by JavaScript -->
+            </p>
+            
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <h3>Formação</h3>
+                  <p id="education-degree"><!-- Populated by JS --></p>
+                  <p class="text-muted" id="education-institution"><!-- Populated by JS --></p>
+                </div>
+              </div>
+              
+              <div class="detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <h3>Posição Atual</h3>
+                  <p id="current-role"><!-- Populated by JS --></p>
+                  <p class="text-muted" id="current-company"><!-- Populated by JS --></p>
+                </div>
+              </div>
+              
+              <div class="detail-item">
+                <i class="fas fa-code"></i>
+                <div>
+                  <h3>Experiência</h3>
+                  <p id="years-experience"><!-- Populated by JS --></p>
+                  <p class="text-muted">Desenvolvimento Fullstack e Mobile</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
+    <!-- Experience Section -->
+    <section id="experience" class="experience section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experiência Profissional</h2>
+        
+        <div class="experience-timeline">
+          <!-- Timeline items will be populated by JavaScript or static HTML -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Staff Engineer</h3>
+              <h4>PicPay</h4>
+              <p class="timeline-period">Atual</p>
+              <p>Liderança técnica em projetos de alta complexidade, arquitetura de sistemas distribuídos e mentoria de equipes de desenvolvimento.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Desenvolvimento Fullstack & Mobile</h3>
+              <h4>Carreira de 13+ anos</h4>
+              <p>Experiência abrangente em desenvolvimento de aplicações web e mobile, utilizando diversas tecnologias e stacks modernas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            if (distance < 0) {
-                document.querySelector('.container').innerHTML = `
-                    <h1>🎉 O momento chegou! 🎉</h1>
-                    <div class="message">
-                        <p>Este é o começo de uma história linda! ❤️</p>
-                    </div>
-                `;
-                return;
-            }
+    <!-- Courses Section -->
+    <section id="courses" class="courses section">
+      <div class="container">
+        <h2 class="section-title">Cursos & Educação</h2>
+        
+        <!-- Course Statistics -->
+        <div class="course-stats">
+          <div class="stat-item fade-in">
+            <i class="fas fa-book"></i>
+            <div>
+              <span class="stat-number" id="total-courses">17</span>
+              <span class="stat-label">Cursos Publicados</span>
+            </div>
+          </div>
+          <div class="stat-item fade-in">
+            <i class="fas fa-users"></i>
+            <div>
+              <span class="stat-number" id="total-students">55,541</span>
+              <span class="stat-label">Alunos</span>
+            </div>
+          </div>
+          <div class="stat-item fade-in">
+            <i class="fas fa-star"></i>
+            <div>
+              <span class="stat-number" id="total-reviews">4,480</span>
+              <span class="stat-label">Avaliações</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Featured Courses -->
+        <h3 class="subsection-title">Cursos em Destaque</h3>
+        <div class="courses-grid" id="courses-grid">
+          <!-- Course cards will be populated by JavaScript -->
+        </div>
+        
+        <div class="text-center mt-2">
+          <a href="https://www.udemy.com/user/nataniel-paiva/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary">
+            Ver Todos os Cursos na Udemy
+          </a>
+        </div>
+      </div>
+    </section>
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <!-- Skills Section -->
+    <section id="skills" class="skills section section-alt">
+      <div class="container">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        
+        <div class="skills-container" id="skills-container">
+          <!-- Skills will be populated by JavaScript, grouped by category -->
+        </div>
+      </div>
+    </section>
 
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
+    <!-- YouTube Section -->
+    <section id="youtube" class="youtube section">
+      <div class="container">
+        <h2 class="section-title">Conteúdo YouTube</h2>
+        <p class="section-description">Conteúdo educacional gratuito no canal @NatanielTech</p>
+        
+        <div class="youtube-grid" id="youtube-grid">
+          <!-- YouTube videos will be populated by JavaScript -->
+        </div>
+        
+        <div class="text-center mt-2">
+          <a href="https://www.youtube.com/@NatanielTech" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary">
+            <i class="fab fa-youtube"></i> Inscrever-se no Canal
+          </a>
+        </div>
+      </div>
+    </section>
 
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    </script>
+    <!-- Talks Section -->
+    <section id="talks" class="talks section section-alt">
+      <div class="container">
+        <h2 class="section-title">Palestras & Eventos</h2>
+        
+        <div class="talks-grid" id="talks-grid">
+          <!-- Talks will be populated by JavaScript -->
+        </div>
+        
+        <div class="text-center mt-2">
+          <a href="#contact" class="btn btn-secondary">Solicitar Palestra</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-description">Perguntas, propostas ou apenas um oi? Envie uma mensagem!</p>
+        
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome Completo *</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message" id="name-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message" id="email-error"></span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Assunto *</label>
+            <input type="text" id="subject" name="subject" required>
+            <span class="error-message" id="subject-error"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensagem *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" id="submit-btn">
+            <span class="btn-text">Enviar Mensagem</span>
+            <span class="btn-loading" style="display: none;">
+              <i class="fas fa-spinner fa-spin"></i> Enviando...
+            </span>
+          </button>
+          
+          <div id="form-status" class="form-status" style="display: none;"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Social Links -->
+        <div class="footer-social" id="footer-social">
+          <!-- Will be populated by JavaScript -->
+        </div>
+        
+        <!-- Quick Links -->
+        <nav class="footer-nav">
+          <a href="#home">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#courses">Cursos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        
+        <!-- Copyright -->
+        <div class="footer-copyright">
+          <p>&copy; 2026 Nataniel Paiva. Todos os direitos reservados.</p>
+          <p class="footer-tagline">Feito com ❤️ usando HTML, CSS e JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/youtube.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

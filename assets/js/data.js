@@ -7,7 +7,7 @@ const SiteData = {
     title: "Staff Engineer & Professor & Palestrante",
     tagline: "Transformando ideias em soluções tecnológicas há mais de 13 anos",
     description: `Sou Bacharel em Sistemas de Informação, atualmente Staff Engineer no PicPay 
-    com uma carreira de mais de 13 anos focada em Desenvolvimento Fullstack e Mobile. 
+    com uma carreira de mais de 15 anos focada em Desenvolvimento Fullstack e Mobile. 
     Trabalho com diversas tecnologias modernas como Java, Spring, Python, React, Angular e MongoDB. 
     Nas horas vagas, sou professor e instrutor em plataformas EAD, onde já ajudei mais de 55 mil 
     alunos a evoluírem suas carreiras em tecnologia.`,
