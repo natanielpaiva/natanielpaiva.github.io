@@ -20,7 +20,7 @@ const profileData = {
     institution: "Centro Universitário de Desenvolvimento do Centro Oeste"
   },
   photos: {
-    hero: "assets/images/hero-photo.jpg",
+    hero: "assets/images/hero-photo.png",
     about: "assets/images/about-photo.png",
     favicon: "assets/images/favicon.ico"
   },
