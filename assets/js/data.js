@@ -25,7 +25,7 @@ const profileData = {
     favicon: "assets/images/favicon.ico"
   },
   email: "contato@natanielpaiva.com.br",
-  tagline: "Transformando ideias em soluções tecnológicas há mais de 13 anos",
+  tagline: "Transformando ideias em soluções tecnológicas há mais de 16 anos",
   subtitle: "Apaixonado por compartilhar conhecimento e desenvolver pessoas"
 };
 
@@ -315,7 +315,7 @@ const contactConfig = {
 // Site Configuration
 const siteConfig = {
   title: "Nataniel Paiva - Staff Engineer & Professor",
-  description: "Site pessoal profissional de Nataniel Paiva - Staff Engineer, Professor e Palestrante. 13+ anos de experiência em desenvolvimento Fullstack e Mobile.",
+  description: "Site pessoal profissional de Nataniel Paiva - Staff Engineer, Professor e Palestrante. 16+ anos de experiência em desenvolvimento Fullstack e Mobile.",
   keywords: "nataniel paiva, staff engineer, professor, desenvolvedor, spring boot, angular, react, java, php, python, mongodb, cursos udemy, palestras tecnologia",
   author: "Nataniel Paiva",
   url: "https://natanielpaiva.github.io",

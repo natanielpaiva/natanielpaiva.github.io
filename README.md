@@ -8,7 +8,7 @@ Professional personal website showcasing my work as a Staff Engineer, Professor,
 
 This is a modern, responsive single-page application built with vanilla HTML, CSS, and JavaScript. It serves as my digital portfolio, featuring:
 
-- **Professional Profile**: 13+ years of experience in Fullstack and Mobile Development
+- **Professional Profile**: 16+ years of experience in Fullstack and Mobile Development
 - **Online Courses**: 17 courses on Udemy with 55,541+ students
 - **Technical Content**: YouTube channel integration with latest videos
 - **Contact Form**: Direct communication channel for professional inquiries
