@@ -24,7 +24,7 @@ const profileData = {
     about: "assets/images/about-photo.png",
     favicon: "assets/images/favicon.ico"
   },
-  email: "contato@natanielpaiva.com.br",
+  email: "nataniel.paiva@gmail.com",
   tagline: "Transformando ideias em soluções tecnológicas há mais de 16 anos",
   subtitle: "Apaixonado por compartilhar conhecimento e desenvolver pessoas"
 };
@@ -78,7 +78,7 @@ const technicalSkills = [
   { id: "typescript", name: "TypeScript", category: "language", proficiency: "advanced", icon: "assets/images/tech-icons/typescript.svg" },
   
   // Backend Frameworks
-  { id: "spring", name: "Spring Framework", category: "framework-backend", proficiency: "expert", icon: "assets/images/tech-icons/spring.svg" },
+  { id: "spring", name: "Spring Framework", category: "framework-backend", proficiency: "expert", icon: "assets/images/tech-icons/spring.png" },
   { id: "laravel", name: "Laravel", category: "framework-backend", proficiency: "expert", icon: "assets/images/tech-icons/laravel.svg" },
   { id: "flask", name: "Flask", category: "framework-backend", proficiency: "advanced", icon: "assets/images/tech-icons/flask.svg" },
   
@@ -123,41 +123,9 @@ const courses = [
     level: "all-levels",
     lectureCount: 61,
     price: { current: 49.90, original: 58.90, currency: "BRL" },
-    url: "https://www.udemy.com/course/spring-framework-5-spring-boot-2/",
-    thumbnail: "assets/images/courses/spring-boot.jpg",
+    url: "https://www.udemy.com/course/spring-framework-5-spring-boot-2/?referralCode=F6638FB3FF8589B0F1E1",
+    thumbnail: "assets/images/courses/spring.png",
     tags: ["Java", "Spring", "Spring Boot", "Wildfly"],
-    featured: true
-  },
-  {
-    id: "angular-integracao-apis",
-    title: "Angular e integração de APIs: Criando um sistema completo",
-    description: "Desenvolva aplicações web modernas com Angular integrando APIs REST",
-    rating: 4.6,
-    reviewCount: 721,
-    studentCount: null,
-    duration: { hours: 2, minutes: 30 },
-    level: "intermediate",
-    lectureCount: 42,
-    price: { current: 49.90, original: 58.90, currency: "BRL" },
-    url: "https://www.udemy.com/course/angular-integracao-apis/",
-    thumbnail: "assets/images/courses/angular-api.jpg",
-    tags: ["Angular", "TypeScript", "REST API"],
-    featured: true
-  },
-  {
-    id: "ionic-3-laravel",
-    title: "Criar aplicativos com Ionic 3 e Laravel",
-    description: "Construa apps mobile híbridos com Ionic 3 e backend Laravel",
-    rating: 4.5,
-    reviewCount: 478,
-    studentCount: null,
-    duration: { hours: 3, minutes: 0 },
-    level: "intermediate",
-    lectureCount: 38,
-    price: { current: 49.90, original: 58.90, currency: "BRL" },
-    url: "https://www.udemy.com/course/ionic-3-laravel/",
-    thumbnail: "assets/images/courses/ionic-laravel.jpg",
-    tags: ["Ionic", "Laravel", "Mobile"],
     featured: true
   },
   {
@@ -171,8 +139,8 @@ const courses = [
     level: "expert",
     lectureCount: 15,
     price: { current: 49.90, original: 58.90, currency: "BRL" },
-    url: "https://www.udemy.com/course/arquitetura-hexagonal/",
-    thumbnail: "assets/images/courses/hexagonal.jpg",
+    url: "https://www.udemy.com/course/arquitetura-hexagonal-na-pratica/?referralCode=3E0D9C2C0E24508EF1E7",
+    thumbnail: "assets/images/courses/hexagonal.png",
     tags: ["Arquitetura", "Spring Boot", "Clean Architecture"],
     featured: true
   },
@@ -187,25 +155,9 @@ const courses = [
     level: "expert",
     lectureCount: 12,
     price: { current: 49.90, original: 58.90, currency: "BRL" },
-    url: "https://www.udemy.com/course/c4-model/",
-    thumbnail: "assets/images/courses/c4-model.jpg",
+    url: "https://www.udemy.com/course/modelo-de-arquitetura-c4-model/?referralCode=6AC0232CE59A084BD914",
+    thumbnail: "assets/images/courses/c4-model.png",
     tags: ["Arquitetura", "C4 Model", "Documentação"],
-    featured: true
-  },
-  {
-    id: "mongodb-plsql",
-    title: "MongoDB e PL/SQL: Bancos de dados na prática",
-    description: "Domine MongoDB NoSQL e PL/SQL Oracle com projetos práticos",
-    rating: 4.7,
-    reviewCount: 7,
-    studentCount: null,
-    duration: { hours: 6, minutes: 30 },
-    level: "beginner",
-    lectureCount: 48,
-    price: { current: 49.90, original: 58.90, currency: "BRL" },
-    url: "https://www.udemy.com/course/mongodb-plsql/",
-    thumbnail: "assets/images/courses/mongodb.jpg",
-    tags: ["MongoDB", "Oracle", "Database"],
     featured: true
   }
 ];
@@ -213,58 +165,31 @@ const courses = [
 // YouTube Videos (Manual list - to be updated periodically)
 const youtubeVideos = [
   {
-    id: "msXL2oDexqw",
-    title: "Spring Boot Tutorial - Crash Course",
-    description: "Tutorial completo de Spring Boot para iniciantes e intermediários",
-    thumbnail: "https://img.youtube.com/vi/msXL2oDexqw/maxresdefault.jpg",
+    id: "1y5bPYWUifw",
+    title: "Como o GitHub Copilot Fez Essa Funcionalidade Inteira em Minutos (React Native + Expo)",
+    description: "Como o GitHub Copilot Fez Essa Funcionalidade Inteira em Minutos (React Native + Expo)",
+    thumbnail: "https://img.youtube.com/vi/1y5bPYWUifw/maxresdefault.jpg",
     publishedAt: "2023-06-15T10:00:00Z",
-    url: "https://www.youtube.com/watch?v=msXL2oDexqw",
-    embedUrl: "https://www.youtube.com/embed/msXL2oDexqw"
+    url: "https://youtu.be/1y5bPYWUifw",
+    embedUrl: "https://youtu.be/1y5bPYWUifw"
   },
   {
-    id: "CnailTcJV_U",
-    title: "Arquitetura Hexagonal na Prática",
-    description: "Aprenda a implementar Arquitetura Hexagonal em projetos reais",
-    thumbnail: "https://img.youtube.com/vi/CnailTcJV_U/maxresdefault.jpg",
+    id: "dcS6iPn4v2Y",
+    title: "Não colocar regras na Service te reprovaria em um processo seletivo?",
+    description: "Modelo Rico vs. Modelo Anêmico – Você Está Fazendo Certo?",
+    thumbnail: "https://img.youtube.com/vi/dcS6iPn4v2Y/maxresdefault.jpg",
     publishedAt: "2023-08-20T14:30:00Z",
-    url: "https://www.youtube.com/watch?v=CnailTcJV_U",
-    embedUrl: "https://www.youtube.com/embed/CnailTcJV_U"
+    url: "https://www.youtube.com/watch?v=dcS6iPn4v2Y",
+    embedUrl: "https://www.youtube.com/watch?v=dcS6iPn4v2Y"
   },
   {
-    id: "0fa851jR7R8",
-    title: "MongoDB Crash Course",
-    description: "Aprenda MongoDB do zero com exemplos práticos",
-    thumbnail: "https://img.youtube.com/vi/0fa851jR7R8/maxresdefault.jpg",
+    id: "arA7VUo4Fx0",
+    title: "Desenvolva seu pensamento CRÍTICO",
+    description: "Desenvolver um pensamento crítico é uma das habilidades mais valiosas para qualquer profissional, especialmente para programadores. ",
+    thumbnail: "https://img.youtube.com/vi/arA7VUo4Fx0/maxresdefault.jpg",
     publishedAt: "2023-09-10T16:00:00Z",
-    url: "https://www.youtube.com/watch?v=0fa851jR7R8",
-    embedUrl: "https://www.youtube.com/embed/0fa851jR7R8"
-  },
-  {
-    id: "Kehw8J4btvE",
-    title: "Angular Tutorial para Iniciantes",
-    description: "Tutorial completo de Angular com projetos práticos",
-    thumbnail: "https://img.youtube.com/vi/Kehw8J4btvE/maxresdefault.jpg",
-    publishedAt: "2023-07-25T12:00:00Z",
-    url: "https://www.youtube.com/watch?v=Kehw8J4btvE",
-    embedUrl: "https://www.youtube.com/embed/Kehw8J4btvE"
-  },
-  {
-    id: "RLtyhwFtXQA",
-    title: "React Native Full Course",
-    description: "Curso completo de React Native do básico ao avançado",
-    thumbnail: "https://img.youtube.com/vi/RLtyhwFtXQA/maxresdefault.jpg",
-    publishedAt: "2023-10-05T15:30:00Z",
-    url: "https://www.youtube.com/watch?v=RLtyhwFtXQA",
-    embedUrl: "https://www.youtube.com/embed/RLtyhwFtXQA"
-  },
-  {
-    id: "ImtZ5yENzgE",
-    title: "Laravel 10 Tutorial Completo",
-    description: "Aprenda Laravel 10 construindo aplicações reais",
-    thumbnail: "https://img.youtube.com/vi/ImtZ5yENzgE/maxresdefault.jpg",
-    publishedAt: "2023-11-12T11:00:00Z",
-    url: "https://www.youtube.com/watch?v=ImtZ5yENzgE",
-    embedUrl: "https://www.youtube.com/embed/ImtZ5yENzgE"
+    url: "https://www.youtube.com/watch?v=arA7VUo4Fx0",
+    embedUrl: "https://www.youtube.com/embed/arA7VUo4Fx0"
   }
 ];
 
@@ -279,21 +204,21 @@ const youtubeChannel = {
 const talks = [
   {
     id: "talk-1",
-    title: "Microservices com Spring Boot",
-    event: "Tech Conference 2025",
-    date: "2025-11-20",
-    location: "São Paulo, SP",
-    description: "Palestra sobre implementação de microservices usando Spring Boot e boas práticas de arquitetura",
+    title: "Quando usar a arquitetura hexagonal? ",
+    event: "The Developer's Conference 2022",
+    date: "2022-06-01",
+    location: "Florianópolis, SC",
+    description: "Palestra sobre Arquitetura Hexagonal (Ports and Adapters) e seus casos de uso ideais",
     slides: null,
     video: null
   },
   {
     id: "talk-2",
-    title: "C4 Model para Documentação de Arquitetura",
-    event: "DevOps Summit",
-    date: "2025-09-15",
-    location: "Rio de Janeiro, RJ",
-    description: "Workshop prático sobre uso do C4 Model para documentar arquitetura de software",
+    title: "Design de Código Assistido por IA: Novo Paradigma ou Risco Arquitetural?",
+    event: "The Developer's Conference 2025",
+    date: "2025-09-17",
+    location: "São Paulo, SP",
+    description: "Painel com especialistas discutindo como a inteligência artificial está transformando (ou comprometendo) os fundamentos do design de código - desde decisões micro (como nome de métodos ou estrutura de classes) até macroestruturas (designs arquiteturais, DDD, padrões e anti-padrões).",
     slides: null,
     video: null
   }
@@ -303,31 +228,10 @@ const talks = [
 const talkTopics = [
   {
     id: "topic-1",
-    title: "Arquitetura Hexagonal",
-    description: "Aprenda a implementar Clean Architecture com Ports and Adapters",
-    duration: "45-60 min",
+    title: "Apache Camel e a Orquestração de Microservices",
+    description: "Apache Camel e a Orquestração de Microservices",
+    duration: "16 min",
     level: "Intermediate"
-  },
-  {
-    id: "topic-2",
-    title: "Spring Boot Best Practices",
-    description: "Boas práticas e patterns para aplicações Spring Boot em produção",
-    duration: "60 min",
-    level: "All Levels"
-  },
-  {
-    id: "topic-3",
-    title: "MongoDB em Aplicações Escaláveis",
-    description: "Como usar MongoDB eficientemente em aplicações de grande escala",
-    duration: "45 min",
-    level: "Intermediate"
-  },
-  {
-    id: "topic-4",
-    title: "React Native: Do Zero ao App Store",
-    description: "Jornada completa de desenvolvimento e publicação de apps mobile",
-    duration: "90 min",
-    level: "Beginner"
   }
 ];
 
