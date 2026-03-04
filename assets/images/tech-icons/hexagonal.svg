@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Hexagonal Architecture: Central hexagon with port circles at vertices -->
+  <!-- Main hexagon -->
+  <polygon points="64,10 112,34 112,82 64,106 16,82 16,34" fill="none" stroke="#6B21A8" stroke-width="4"/>
+  <!-- Inner hexagon (core) -->
+  <polygon points="64,30 88,44 88,72 64,86 40,72 40,44" fill="#6B21A8" opacity="0.2"/>
+  <!-- Port circles at vertices -->
+  <circle cx="64" cy="10" r="5" fill="#6B21A8"/>
+  <circle cx="112" cy="34" r="5" fill="#6B21A8" opacity="0.8"/>
+  <circle cx="112" cy="82" r="5" fill="#6B21A8" opacity="0.8"/>
+  <circle cx="64" cy="106" r="5" fill="#6B21A8"/>
+  <circle cx="16" cy="34" r="5" fill="#6B21A8" opacity="0.8"/>
+  <circle cx="16" cy="82" r="5" fill="#6B21A8" opacity="0.8"/>
+  <!-- Adapter lines from ports to inner hexagon -->
+  <line x1="64" y1="15" x2="64" y2="30" stroke="#6B21A8" stroke-width="2" opacity="0.5"/>
+  <line x1="108" y1="36" x2="88" y2="44" stroke="#6B21A8" stroke-width="2" opacity="0.5"/>
+  <line x1="108" y1="80" x2="88" y2="72" stroke="#6B21A8" stroke-width="2" opacity="0.5"/>
+  <line x1="64" y1="101" x2="64" y2="86" stroke="#6B21A8" stroke-width="2" opacity="0.5"/>
+  <line x1="20" y1="36" x2="40" y2="44" stroke="#6B21A8" stroke-width="2" opacity="0.5"/>
+  <line x1="20" y1="80" x2="40" y2="72" stroke="#6B21A8" stroke-width="2" opacity="0.5"/>
+</svg>
