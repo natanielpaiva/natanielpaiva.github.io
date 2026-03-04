@@ -1,6 +1,6 @@
 /**
  * Contact Form Handler
- * Handles form validation and submission to Formspree
+ * Handles form validation and submission to Google Forms
  */
 
 // Form validation
@@ -86,36 +86,28 @@ function toggleSubmitButton(loading) {
   }
 }
 
-// Submit form to Formspree
+// Submit form to Google Forms
 async function submitContactForm(formData) {
-  const endpoint = contactConfig?.formspreeEndpoint || 'YOUR_FORMSPREE_ENDPOINT_HERE';
-  
-  // Check if endpoint is configured
-  if (endpoint === 'YOUR_FORMSPREE_ENDPOINT_HERE') {
-    showFormFeedback('Formulário não configurado. Entre em contato por email.', 'error');
-    return false;
-  }
-  
-  try {
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    });
-    
-    if (response.ok) {
-      return true;
-    } else {
-      const errorData = await response.json();
-      console.error('Form submission error:', errorData);
-      return false;
-    }
-  } catch (error) {
-    console.error('Network error:', error);
-    return false;
-  }
+  const { googleForms } = contactConfig;
+  const params = new URLSearchParams();
+
+  params.append(googleForms.fieldMapping.name,    formData.name);
+  params.append(googleForms.fieldMapping.email,   formData.email);
+  params.append(googleForms.fieldMapping.subject,  formData.subject);
+  params.append(googleForms.fieldMapping.message,  formData.message);
+
+  await fetch(googleForms.actionUrl, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: params.toString()
+  });
+
+  // mode: 'no-cors' returns opaque response (type: "opaque", status: 0).
+  // If fetch resolves without throwing, the request was sent successfully.
+  // Network errors, offline, or blocked requests will reject the promise.
 }
 
 // Handle form submission
@@ -146,16 +138,16 @@ async function handleContactFormSubmit(event) {
   toggleSubmitButton(true);
   
   // Submit form
-  const success = await submitContactForm(formData);
-  
-  // Hide loading state
-  toggleSubmitButton(false);
-  
-  if (success) {
-    showFormFeedback('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
+  try {
+    await submitContactForm(formData);
+    // Opaque response resolved — treat as success
+    showFormFeedback(contactConfig.successMessage, 'success');
     form.reset();
-  } else {
-    showFormFeedback('Erro ao enviar mensagem. Por favor, tente novamente ou envie um email diretamente.', 'error');
+  } catch (error) {
+    // Network error or request blocked — show error, preserve form data
+    showFormFeedback(contactConfig.errorMessage, 'error');
+  } finally {
+    toggleSubmitButton(false);
   }
 }
 
