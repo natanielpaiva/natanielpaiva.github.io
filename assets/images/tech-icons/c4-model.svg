@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- C4 Model: 4 stacked layers representing Context, Container, Component, Code -->
+  <!-- Layer 4 (Code) - narrowest, bottom -->
+  <rect x="44" y="92" width="40" height="16" rx="3" fill="#1168BD" opacity="0.4"/>
+  <!-- Layer 3 (Component) -->
+  <rect x="34" y="68" width="60" height="18" rx="3" fill="#1168BD" opacity="0.6"/>
+  <!-- Layer 2 (Container) -->
+  <rect x="24" y="42" width="80" height="20" rx="3" fill="#1168BD" opacity="0.8"/>
+  <!-- Layer 1 (Context) - widest, top -->
+  <rect x="14" y="14" width="100" height="22" rx="3" fill="#1168BD"/>
+  <!-- Connecting lines between layers -->
+  <line x1="64" y1="36" x2="64" y2="42" stroke="#1168BD" stroke-width="2" opacity="0.5"/>
+  <line x1="64" y1="62" x2="64" y2="68" stroke="#1168BD" stroke-width="2" opacity="0.5"/>
+  <line x1="64" y1="86" x2="64" y2="92" stroke="#1168BD" stroke-width="2" opacity="0.5"/>
+</svg>

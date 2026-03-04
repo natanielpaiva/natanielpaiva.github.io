@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Microservices: Connected service blocks -->
+  <!-- Connection lines (drawn first, behind blocks) -->
+  <line x1="44" y1="38" x2="84" y2="38" stroke="#0D9488" stroke-width="2" opacity="0.5"/>
+  <line x1="34" y1="48" x2="34" y2="72" stroke="#0D9488" stroke-width="2" opacity="0.5"/>
+  <line x1="94" y1="48" x2="94" y2="72" stroke="#0D9488" stroke-width="2" opacity="0.5"/>
+  <line x1="44" y1="82" x2="84" y2="82" stroke="#0D9488" stroke-width="2" opacity="0.5"/>
+  <line x1="64" y1="48" x2="34" y2="72" stroke="#0D9488" stroke-width="2" opacity="0.4"/>
+  <line x1="64" y1="48" x2="94" y2="72" stroke="#0D9488" stroke-width="2" opacity="0.4"/>
+  <!-- Service block 1 (top-left) -->
+  <rect x="14" y="18" width="40" height="30" rx="6" fill="#0D9488"/>
+  <!-- Service block 2 (top-right) -->
+  <rect x="74" y="18" width="40" height="30" rx="6" fill="#0D9488" opacity="0.85"/>
+  <!-- Service block 3 (bottom-left) -->
+  <rect x="14" y="72" width="40" height="30" rx="6" fill="#0D9488" opacity="0.7"/>
+  <!-- Service block 4 (bottom-right) -->
+  <rect x="74" y="72" width="40" height="30" rx="6" fill="#0D9488" opacity="0.55"/>
+  <!-- Small inner circles representing service endpoints -->
+  <circle cx="34" cy="33" r="4" fill="white" opacity="0.6"/>
+  <circle cx="94" cy="33" r="4" fill="white" opacity="0.6"/>
+  <circle cx="34" cy="87" r="4" fill="white" opacity="0.6"/>
+  <circle cx="94" cy="87" r="4" fill="white" opacity="0.6"/>
+</svg>

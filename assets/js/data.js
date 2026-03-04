@@ -78,7 +78,7 @@ const technicalSkills = [
   { id: "typescript", name: "TypeScript", category: "language", proficiency: "advanced", icon: "assets/images/tech-icons/typescript.svg" },
   
   // Backend Frameworks
-  { id: "spring", name: "Spring Framework", category: "framework-backend", proficiency: "expert", icon: "assets/images/tech-icons/spring.png" },
+  { id: "spring", name: "Spring Framework", category: "framework-backend", proficiency: "expert", icon: "assets/images/tech-icons/spring.svg" },
   { id: "laravel", name: "Laravel", category: "framework-backend", proficiency: "expert", icon: "assets/images/tech-icons/laravel.svg" },
   { id: "flask", name: "Flask", category: "framework-backend", proficiency: "advanced", icon: "assets/images/tech-icons/flask.svg" },
   
