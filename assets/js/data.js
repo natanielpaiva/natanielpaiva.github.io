@@ -237,10 +237,20 @@ const talkTopics = [
 
 // Contact Form Configuration
 const contactConfig = {
-  formspreeEndpoint: "YOUR_FORMSPREE_ENDPOINT_HERE", // To be replaced with actual endpoint
+  googleForms: {
+    actionUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfekOv2-RyIlc9VpWnMUZ2NvIrJARLTKOETH8q9LnYxpgv7Sw/formResponse",
+    fieldMapping: {
+      name:    "entry.437236891",
+      email:   "entry.572187819",
+      subject: "entry.1008170530",
+      message: "entry.1210054035"
+    }
+  },
   maxMessageLength: 1000,
   requiredFields: ["name", "email", "message"],
-  emailRegex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  emailRegex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+  successMessage: "Mensagem enviada com sucesso! Entrarei em contato em breve.",
+  errorMessage: "Erro ao enviar mensagem. Por favor, tente novamente ou envie um email diretamente."
 };
 
 // Site Configuration
