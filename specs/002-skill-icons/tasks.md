@@ -63,9 +63,9 @@
 ### Implementation for User Story 2
 
 - [x] T009 [P] [US2] Verify all icon files in assets/images/tech-icons/ are under 50KB each by running `find assets/images/tech-icons/ -size +50k` — expected: no results (see data-model.md validation rule 3)
-- [ ] T010 [US2] Open index.html in browser, navigate to Skills section, open DevTools Console and verify zero 404 or loading errors for any icon file under assets/images/tech-icons/
-- [ ] T011 [US2] Test onerror fallback mechanism: temporarily rename one icon file (e.g., `mv assets/images/tech-icons/java.svg assets/images/tech-icons/java.svg.bak`), reload page, verify the placeholder initial letter displays for that skill, then restore the file
-- [ ] T012 [US2] Test Skills section rendering on mobile viewport (320px width) in browser DevTools responsive mode — verify all icons display with correct proportions and no distortion
+- [x] T010 [US2] Open index.html in browser, navigate to Skills section, open DevTools Console and verify zero 404 or loading errors for any icon file under assets/images/tech-icons/
+- [x] T011 [US2] Test onerror fallback mechanism: temporarily rename one icon file (e.g., `mv assets/images/tech-icons/java.svg assets/images/tech-icons/java.svg.bak`), reload page, verify the placeholder initial letter displays for that skill, then restore the file
+- [x] T012 [US2] Test Skills section rendering on mobile viewport (320px width) in browser DevTools responsive mode — verify all icons display with correct proportions and no distortion
 
 **Checkpoint**: All icons load without console errors, fallback works when icons are missing, icons render correctly on mobile
 
@@ -80,8 +80,8 @@
 ### Implementation for User Story 3
 
 - [x] T013 [P] [US3] Verify all SVG files in assets/images/tech-icons/ contain `viewBox="0 0 128 128"` — normalize any that differ by editing the SVG root element to use Devicons standard viewBox (see data-model.md validation rule 4)
-- [ ] T014 [US3] Visual comparison of all 19 icons at badge size in browser — verify uniform rendering dimensions across all categories (languages, frameworks, mobile, databases, architecture) and that no icon appears disproportionately large or small
-- [ ] T015 [US3] Verify all icons (especially custom architecture SVGs) are clearly visible against the page background in light mode and visually recognizable at 48x48px badge size
+- [x] T014 [US3] Visual comparison of all 19 icons at badge size in browser — verify uniform rendering dimensions across all categories (languages, frameworks, mobile, databases, architecture) and that no icon appears disproportionately large or small
+- [x] T015 [US3] Verify all icons (especially custom architecture SVGs) are clearly visible against the page background in light mode and visually recognizable at 48x48px badge size
 
 **Checkpoint**: All icons appear uniformly sized, style-consistent, and professionally presented across all skill categories
 
@@ -91,8 +91,8 @@
 
 **Purpose**: Final validation and version control
 
-- [ ] T016 Run full verification checklist from specs/002-skill-icons/quickstart.md (7 items: directory exists, Devicons render, custom SVGs recognizable, no 404s, responsive, performance, fallback)
-- [ ] T017 Git add and commit all new/modified files on branch 002-skill-icons with descriptive commit message
+- [x] T016 Run full verification checklist from specs/002-skill-icons/quickstart.md (7 items: directory exists, Devicons render, custom SVGs recognizable, no 404s, responsive, performance, fallback)
+- [x] T017 Git add and commit all new/modified files on branch 002-skill-icons with descriptive commit message
 
 ---
 
